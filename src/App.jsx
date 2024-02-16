@@ -54,6 +54,16 @@ function App() {
     }
   }
 
+  /*useEffect(()=>{
+    //como mínimo se ejecuta 1 vez
+    saveGameToStorage({
+      board: newBoard,
+      turn: newTurn
+    });
+  }, 
+  [turn, board] //Cada vez que se actualice el turno o el tablero guadar la partida
+  )*/
+
   useEffect(()=>{
     //como mínimo se ejecuta 1 vez
     console.log('Use effect');
